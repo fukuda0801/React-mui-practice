@@ -61,7 +61,7 @@ const MemoPage: React.FC = () => {
   }
 
   return (
-    <Container sx={{ marginTop: '2rem' }}>
+    <Container maxWidth="md" sx={{ marginTop: '2rem' }}>
       <Typography variant="h4" gutterBottom>
         User List{' '}
         <Chip

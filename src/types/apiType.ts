@@ -8,3 +8,14 @@ export interface User {
 export interface UserListProps {
   users: User[];
 }
+
+// ポスト情報の型
+export interface Post {
+  id: number;
+  title: string;
+  body: string;
+}
+
+export interface PostListProps {
+  posts: Post[];
+}
