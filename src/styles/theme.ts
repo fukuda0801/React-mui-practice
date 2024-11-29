@@ -1,33 +1,22 @@
 import { createTheme } from '@mui/material';
 
-declare module '@mui/material/styles' {
-  interface Palette {
-    tertiary: Palette['primary'];
-    quaternary: Palette['primary'];
-  }
-  interface PaletteOptions {
-    tertiary: PaletteOptions['primary'];
-    quaternary: PaletteOptions['primary'];
-  }
-}
-
 const getTheme = (mode: 'light' | 'dark') =>
   createTheme({
     palette: {
       mode,
       primary: {
-        main: '#f0c1d4',
+        main: '#fad1d8',
         contrastText: '#fff',
       },
       secondary: {
-        main: '#f8ced5',
+        main: '#f2c4d6',
         contrastText: '#fff',
       },
-      tertiary: {
+      info: {
         main: '#f8ebe2',
         contrastText: '#fff',
       },
-      quaternary: {
+      success: {
         main: '#d9bde5',
         contrastText: '#fff',
       },
