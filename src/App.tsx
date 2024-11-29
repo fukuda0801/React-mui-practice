@@ -1,8 +1,15 @@
+import { ThemeProvider } from '@mui/material';
+import getTheme from './styles/theme';
+import AppRoutes from './routes/AppRoutes';
+import { BrowserRouter } from 'react-router-dom';
+
 const App = () => {
   return (
-    <>
-      <div>hello world</div>
-    </>
+    <ThemeProvider theme={getTheme('light')}>
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
+    </ThemeProvider>
   );
 };
 
