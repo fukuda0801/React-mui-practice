@@ -48,7 +48,16 @@ const MainLayout: React.FC = () => {
         <LayoutContent icon={BookIcon} label="投稿一覧" link="/" />
         <LayoutContent icon={PersonIcon} label="ユーザー一覧" link="/" />
         <LayoutContent icon={PhotoIcon} label="フォトギャラリー" link="/" />
-        <LayoutContent icon={CallIcon} label="useMemo練習" link="/memo" />
+        <LayoutContent
+          icon={CallIcon}
+          label="useMemo - ユーザー一覧"
+          link="/memo-users"
+        />
+        <LayoutContent
+          icon={CallIcon}
+          label="useMemo - 投稿一覧"
+          link="/memo-posts"
+        />
         <LayoutContent icon={ModeEditIcon} label="useCallback練習" link="/" />
         <LayoutContent icon={FlareIcon} label="useEffect練習" link="/" />
       </Drawer>
