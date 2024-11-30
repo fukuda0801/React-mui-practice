@@ -46,7 +46,12 @@ const MainLayout: React.FC = () => {
           },
         }}
       >
-        <LayoutContent icon={LoginIcon} label="ログイン" link="/" />
+        <LayoutContent icon={LoginIcon} label="ログイン" link="/login" />
+        <LayoutContent
+          icon={LoginIcon}
+          label="ダッシュボード"
+          link="/dashboard"
+        />
         <LayoutContent icon={BookIcon} label="投稿一覧" link="/" />
         <LayoutContent icon={PersonIcon} label="ユーザー一覧" link="/" />
         <LayoutContent icon={PhotoIcon} label="フォトギャラリー" link="/" />
