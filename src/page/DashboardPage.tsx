@@ -10,6 +10,7 @@ import useAuth from '../hooks/useAuth';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import Profile from '../components/test/context/Profile';
+import ThemeToggleButton from '../components/test/context/ThemeToggleButton';
 
 const StyledContainer = styled(Container)(({ theme }) => ({
   marginTop: theme.spacing(4),
@@ -52,6 +53,7 @@ const DashBoardPage: React.FC = () => {
       >
         ログアウト
       </Button>
+      <ThemeToggleButton />
       <Profile />
       <Snackbar
         open={openSnackbar}
