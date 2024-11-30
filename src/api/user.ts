@@ -19,7 +19,7 @@ export const getUsers = async () => {
 // user詳細を取得する関数
 export const getUserDetail = async (id: number) => {
   try {
-    const userRes = await config.get(`/user/${id}`);
+    const userRes = await config.get(`/users/${id}`);
     const postRes = await config.get('/posts', {
       params: {
         userId: id,

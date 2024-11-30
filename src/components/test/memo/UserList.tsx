@@ -1,5 +1,6 @@
 import { List, ListItem, ListItemText, Paper, Typography } from '@mui/material';
 import { User, UserListProps } from '../../../types/apiType';
+import { Link } from 'react-router-dom';
 
 // ユーザーリストコンポーネント
 const UserList: React.FC<UserListProps> = ({ users }) => {
@@ -10,7 +11,19 @@ const UserList: React.FC<UserListProps> = ({ users }) => {
           <List disablePadding>
             {users.map((user: User) => {
               return (
-                <ListItem key={user.id} divider>
+                <ListItem
+                  divider
+                  component={Link}
+                  to={`/memo-users/${user.id}`}
+                  key={user.id}
+                  sx={{
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    '&:hover': {
+                      backgroundColor: '#d5d5d58b',
+                    },
+                  }}
+                >
                   <ListItemText primary={user.name} secondary={user.email} />
                 </ListItem>
               );

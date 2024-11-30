@@ -11,8 +11,10 @@ import LoginIcon from '@mui/icons-material/Login';
 import PhotoIcon from '@mui/icons-material/Photo';
 import BookIcon from '@mui/icons-material/Book';
 import PersonIcon from '@mui/icons-material/Person';
-import CallIcon from '@mui/icons-material/Call';
+import CommentIcon from '@mui/icons-material/Comment';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import PostAddIcon from '@mui/icons-material/PostAdd';
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import ModeEditIcon from '@mui/icons-material/ModeEdit';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import FlareIcon from '@mui/icons-material/Flare';
@@ -49,14 +51,19 @@ const MainLayout: React.FC = () => {
         <LayoutContent icon={PersonIcon} label="ユーザー一覧" link="/" />
         <LayoutContent icon={PhotoIcon} label="フォトギャラリー" link="/" />
         <LayoutContent
-          icon={CallIcon}
+          icon={PersonOutlineIcon}
           label="useMemo - ユーザー一覧"
           link="/memo-users"
         />
         <LayoutContent
-          icon={CallIcon}
+          icon={PostAddIcon}
           label="useMemo - 投稿一覧"
           link="/memo-posts"
+        />
+        <LayoutContent
+          icon={CommentIcon}
+          label="useMemo - コメント一覧"
+          link="/memo-comments"
         />
         <LayoutContent icon={ModeEditIcon} label="useCallback練習" link="/" />
         <LayoutContent icon={FlareIcon} label="useEffect練習" link="/" />
