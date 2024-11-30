@@ -4,6 +4,7 @@ import UserList from '../components/test/memo/UserList';
 import { useEffect, useMemo, useState } from 'react';
 import { User } from '../types/apiType';
 import { getUsers } from '../api/user';
+import Counter from '../components/test/context/Counter';
 
 const MemoPage: React.FC = () => {
   // ユーザー一覧を格納
@@ -63,7 +64,7 @@ const MemoPage: React.FC = () => {
   return (
     <Container maxWidth="md" sx={{ marginTop: '2rem' }}>
       <Typography variant="h4" gutterBottom>
-        User List{' '}
+        User List
         <Chip
           label={`再レンダリングを起こす:カウント数 ${count}`}
           variant="filled"
@@ -73,6 +74,7 @@ const MemoPage: React.FC = () => {
           onClick={() => setCount((prev) => prev + 1)}
         />
       </Typography>
+      <Counter />
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <UserList users={filterUsers} />
     </Container>
