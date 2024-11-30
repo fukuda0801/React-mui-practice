@@ -4,6 +4,7 @@ import PostList from '../components/test/memo/PostList';
 import { useEffect, useMemo, useState } from 'react';
 import { Post } from '../types/apiType';
 import { getPosts } from '../api/post';
+import ModalExample from '../components/test/context/ModalExample';
 
 const PostPage: React.FC = () => {
   // 投稿一覧
@@ -49,6 +50,8 @@ const PostPage: React.FC = () => {
   //   });
   // };
 
+  // const filteredPosts = noMemoFilteredPosts();
+
   // ロード中の場合
   if (loading) {
     return (
@@ -70,6 +73,7 @@ const PostPage: React.FC = () => {
           sx={{ marginLeft: '2rem' }}
         />
       </Typography>
+      <ModalExample />
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <PostList posts={filteredPosts} />
     </Container>
