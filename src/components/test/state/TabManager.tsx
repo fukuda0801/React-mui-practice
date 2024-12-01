@@ -13,6 +13,8 @@ const TabManager: React.FC = () => {
     setValue(newValue);
   };
 
+  console.log('TabManagerがレンダリングされました');
+
   return (
     <Box sx={{ width: '100%' }}>
       <StyledTabs

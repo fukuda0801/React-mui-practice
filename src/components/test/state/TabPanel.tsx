@@ -11,19 +11,13 @@ const StyledBox = styled(Box)(({ theme }) => ({
   padding: theme.spacing(2),
 }));
 
-const TabPanel: React.FC<TabPanelProps> = ({
-  children,
-  value,
-  index,
-  ...other
-}) => {
+const TabPanel: React.FC<TabPanelProps> = ({ children, value, index }) => {
   return (
     <div
       role="tabpanel"
       hidden={value !== index}
       id={`tabpanel-${index}`}
       aria-labelledby={`tab-${index}`}
-      {...other}
     >
       {value === index && (
         <StyledBox>
