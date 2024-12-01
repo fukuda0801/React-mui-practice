@@ -1,5 +1,6 @@
 import { Container } from '@mui/material';
 import TabManager from '../components/test/state/TabManager';
+import ProductList from '../components/test/callback/ProductList';
 
 const PracticePage: React.FC = () => {
   return (
@@ -9,6 +10,8 @@ const PracticePage: React.FC = () => {
       >
         <TabManager />
       </Container>
+
+      <ProductList />
     </>
   );
 };
