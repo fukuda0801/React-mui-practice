@@ -46,7 +46,12 @@ const MainLayout: React.FC = () => {
           },
         }}
       >
-        <LayoutContent icon={LoginIcon} label="ログイン" link="/" />
+        <LayoutContent icon={LoginIcon} label="ログイン" link="/login" />
+        <LayoutContent
+          icon={LoginIcon}
+          label="ダッシュボード"
+          link="/dashboard"
+        />
         <LayoutContent icon={BookIcon} label="投稿一覧" link="/" />
         <LayoutContent icon={PersonIcon} label="ユーザー一覧" link="/" />
         <LayoutContent icon={PhotoIcon} label="フォトギャラリー" link="/" />
@@ -64,6 +69,11 @@ const MainLayout: React.FC = () => {
           icon={CommentIcon}
           label="useMemo - コメント一覧"
           link="/memo-comments"
+        />
+        <LayoutContent
+          icon={CommentIcon}
+          label="useContext - todoリスト"
+          link="/context-todo"
         />
         <LayoutContent icon={ModeEditIcon} label="useCallback練習" link="/" />
         <LayoutContent icon={FlareIcon} label="useEffect練習" link="/" />
