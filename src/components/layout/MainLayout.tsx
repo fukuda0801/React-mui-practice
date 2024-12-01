@@ -75,6 +75,11 @@ const MainLayout: React.FC = () => {
           label="useContext - todoリスト"
           link="/context-todo"
         />
+        <LayoutContent
+          icon={CommentIcon}
+          label="practice - page"
+          link="/practice"
+        />
         <LayoutContent icon={ModeEditIcon} label="useCallback練習" link="/" />
         <LayoutContent icon={FlareIcon} label="useEffect練習" link="/" />
       </Drawer>
