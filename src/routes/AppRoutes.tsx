@@ -7,6 +7,7 @@ import UserDetailPage from '../page/UserDetailPage';
 import LoginPage from '../page/LoginPage';
 import DashBoardPage from '../page/DashboardPage';
 import ProtectedRoute from './ProtectedRoute';
+import ToDoPage from '../page/ToDoPage';
 
 const AppRoutes: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const AppRoutes: React.FC = () => {
         <Route path="/memo-posts" element={<PostPage />} />
         <Route path="/memo-comments" element={<CommentPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/context-todo" element={<ToDoPage />} />
         <Route
           path="/dashboard"
           element={
